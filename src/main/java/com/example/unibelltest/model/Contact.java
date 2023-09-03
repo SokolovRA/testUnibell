@@ -18,7 +18,6 @@ public class Contact {
     private Long id;
     private String value;
     private ContactType type;
-
     @ManyToOne
     private Client client;
 }

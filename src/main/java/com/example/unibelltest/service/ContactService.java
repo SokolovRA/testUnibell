@@ -6,7 +6,7 @@ import com.example.unibelltest.enums.ContactType;
 import java.util.List;
 
 public interface ContactService {
-    ContactDTO addContact(ContactDTO contactDTO);
+    ContactDTO addContactToClient(Long clientId, ContactType type, String value) ;
     List<ContactDTO> getContactsByClient(Long clientId);
     List<ContactDTO> getContactsByClientAndType(Long clientId, ContactType type);
 }
