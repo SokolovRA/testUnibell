@@ -7,7 +7,9 @@ import java.util.List;
 
 public interface ClientService {
     ClientDTO addClient(ClientDTO clientDTO);
+
     List<ClientDTO> getClients();
+
     ClientInformationDTO getClientById(Long id);
 
 }

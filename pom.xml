@@ -16,6 +16,7 @@
     <properties>
         <java.version>11</java.version>
         <mapstruct.version>1.5.2.Final</mapstruct.version>
+        <org.springdoc.version>1.6.15</org.springdoc.version>
 
     </properties>
     <dependencies>
@@ -27,6 +28,11 @@
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
             <version>${mapstruct.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>${org.springdoc.version}</version>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>

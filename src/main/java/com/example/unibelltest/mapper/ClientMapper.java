@@ -13,6 +13,7 @@ public interface ClientMapper {
     @Mapping(target = "name", source = "client.name")
     @Mapping(target = "contacts", source = "client.contacts")
     ClientInformationDTO toInfoDto(Client client);
+
     @Mapping(target = "id", source = "client.id")
     @Mapping(target = "name", source = "client.name")
     ClientDTO toDto(Client client);

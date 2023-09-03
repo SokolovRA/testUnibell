@@ -9,7 +9,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ContactRepository extends JpaRepository<Contact,Long> {
+public interface ContactRepository extends JpaRepository<Contact, Long> {
     List<Contact> findByClient(Client client);
+
     List<Contact> findByClientAndType(Client client, ContactType type);
 }
